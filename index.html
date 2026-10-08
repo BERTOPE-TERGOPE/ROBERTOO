@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBERTO</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#080b14;color:#f8fafc;line-height:1.6}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:#080b14;border-bottom:1px solid #222}
+.logo{font-size:24px;font-weight:900;letter-spacing:3px}
+.logo span{color:#8b5cf6}
+.links{display:flex;gap:25px;color:#cbd5e1;font-size:14px}
+.links a:hover{color:white}
+.hero{min-height:100vh;display:flex;align-items:center;padding:130px 7% 80px;background:radial-gradient(circle at 80% 20%,#7c3aed35,transparent 35%),radial-gradient(circle at 20% 80%,#06b6d425,transparent 30%)}
+.hero-content{max-width:800px}
+.badge{display:inline-block;padding:9px 15px;border:1px solid #333;background:#111522;border-radius:30px;color:#c4b5fd;margin-bottom:25px;font-size:14px}
+h1{font-size:clamp(52px,10vw,100px);line-height:.95;letter-spacing:-4px;margin-bottom:25px}
+.gradient{background:linear-gradient(90deg,#a78bfa,#22d3ee);-webkit-background-clip:text;color:transparent}
+.hero p{font-size:20px;color:#94a3b8;max-width:650px;margin-bottom:32px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:14px 22px;border-radius:12px;font-weight:700;display:inline-block}
+.primary{background:linear-gradient(90deg,#7c3aed,#06b6d4)}
+.secondary{border:1px solid #333;background:#111522}
+section{padding:100px 7%}
+.section-head{text-align:center;max-width:700px;margin:0 auto 48px}
+.kicker{color:#a78bfa;text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:800}
+h2{font-size:clamp(34px,5vw,52px);margin:10px 0}
+.section-head p,.about p{color:#94a3b8}
+.about{max-width:850px;margin:auto;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:linear-gradient(145deg,#111827,#0d1320);border:1px solid #222;border-radius:20px;padding:28px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#8b5cf655}
+.card h3{font-size:20px;margin-bottom:8px}
+.card p{color:#94a3b8}
+.contact{background:linear-gradient(135deg,#16102b,#071923);text-align:center}
+.contact-box{max-width:700px;margin:auto}
+footer{text-align:center;padding:30px;color:#64748b;border-top:1px solid #222}
+@media(max-width:650px){
+.links{display:none}
+h1{letter-spacing:-2px}
+.hero p{font-size:17px}
+section{padding:75px 6%}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a class="logo" href="#home">ROBE<span>RTO</span></a>
+<div class="links">
+<a href="#home">Home</a>
+<a href="#tentang">Tentang</a>
+<a href="#layanan">Layanan</a>
+<a href="#kontak">Kontak</a>
+</div>
+</nav>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<div class="badge">WELCOME TO MY WEBSITE</div>
+<h1>Halo, saya <span class="gradient">ROBERTO.</span></h1>
+<p>Selamat datang di website pribadi saya. Tempat untuk mengenal saya, melihat karya, dan menemukan berbagai hal yang saya kerjakan.</p>
+<div class="btns">
+<a class="btn primary" href="#tentang">Kenal Saya</a>
+<a class="btn secondary" href="#kontak">Hubungi Saya</a>
+</div>
+</div>
+</section>
+
+<section id="tentang">
+<div class="section-head">
+<div class="kicker">Tentang</div>
+<h2>Siapa Roberto?</h2>
+<p>Sebuah halaman untuk memperkenalkan diri dan membangun identitas online.</p>
+</div>
+<div class="about">
+<p>Hai, saya <b>Roberto</b>. Website ini bisa digunakan sebagai profil pribadi, portofolio, tempat mempromosikan usaha, atau sebagai identitas digital. Semua bagian dapat disesuaikan sesuai kebutuhan.</p>
+</div>
+</section>
+
+<section id="layanan">
+<div class="section-head">
+<div class="kicker">Keahlian</div>
+<h2>Apa yang saya kerjakan?</h2>
+<p>Contoh bagian yang bisa disesuaikan dengan aktivitas atau bisnis Roberto.</p>
+</div>
+<div class="grid">
+<div class="card"><h3>Project</h3><p>Menampilkan project dan karya terbaik yang pernah dibuat.</p></div>
+<div class="card"><h3>Kreativitas</h3><p>Mengembangkan ide menjadi sesuatu yang menarik dan bermanfaat.</p></div>
+<div class="card"><h3>Digital</h3><p>Membangun kehadiran online yang modern dan profesional.</p></div>
+</div>
+</section>
+
+<section class="contact" id="kontak">
+<div class="contact-box">
+<div class="kicker">Kontak</div>
+<h2>Mari terhubung.</h2>
+<p style="color:#94a3b8;margin-bottom:28px">Punya pertanyaan, ide, atau ingin bekerja sama dengan Roberto?</p>
+<a class="btn primary" href="https://wa.me/6285137483880" target="_blank">Chat WhatsApp</a>
+</div>
+</section>
+
+<footer>Copyright 2026 ROBERTO. Semua hak dilindungi.</footer>
+</body>
+</html>
